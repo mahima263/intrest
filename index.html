@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Expression of Intrest</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Expression of Intrest</h1>
+    <form action="" method="post">
+      <div class="form-group">
+        <label for="title">Title:</label>
+
+        <select name="title" id="title">
+          <option value="Mr">Mr.</option>
+
+          <option value="Ms">Ms.</option>
+
+          <option value="Dr">Dr.</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Name:*</label>
+
+        <input type="text" name="name" id="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:*</label>
+
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="contact_number">Contact Number:*</label>
+
+        <input
+          type="tel"
+          name="contact_number"
+          id="contact_number"
+          pattern="[0-9]{10}"
+          placeholder="+91-XXXXXXXXXX"
+          required/>
+         
+        
+      </div>
+      <div class="form-group">
+        <label for="graduating_year">Graduating Year:</label>
+        <input
+          type="month"
+          name="graduating_year"
+          id="graduating_year"
+          min="1965-01"
+          max="2023-12"
+        />
+      </div>
+      <div class="form-group">
+        <label for="current_city">City:</label>
+        <input type="text" name="current_city" id="current_city" required style="flex: 3; margin-right: 10px;">
+        <label for="current_state">State:</label>
+        <input name="current_state" id="current_state" required style="flex: 3; margin-right: 10px;">
+        <label for="current_country">Country:</label>
+        <input type="text" name="current_city" id="current_country" required style="flex: 3;">
+      </div>
+      <div class="form-group">
+        <label for="degree">Degree:</label>
+        <select name="degree" id="degree">
+          <optgroup label="Bachelor of Technology (B.Tech)">
+            <option value="btech">B.Tech</option>
+            <option value="btech_double_major">B.Tech (Double Major)</option>
+            <option value="btech_mba_dual">B.Tech-MBA (Dual)</option>
+            <option value="btech_mtech_dual">
+              B.Tech-M.Tech (Dual Degree)
+            </option>
+            <option value="btech_ms">B.Tech-MS</option>
+            <option value="btech_mdes">B.Tech-MDes</option>
+          </optgroup>
+          <optgroup label="Bachelor of Science (BS)">
+            <option value="bs">Bachelor of Science(BS)</option>
+            <option value="bs_double_major">BS(Double Major)</option>
+            <option value="bs_ms_dual">BS-MS(Dual Degree)</option>
+            <option value="bs_mba_dual">BS-MBA(Dual)</option>
+            <option value="bs_mt_dual">BS-MT (Dual)</option>
+          </optgroup>
+          <optgroup label="Master's Programs">
+            <option value="mtech">M.Tech</option>
+            <option value="mtech_phd">M.Tech+PhD</option>
+            <option value="mdes">M.Des</option>
+            <option value="ms_2year">Master of Science 2-Year</option>
+            <option value="ms_r">MS-R</option>
+            <option value="ms_pd_dual">MS-PD (Dual)</option>
+            <option value="msc_phd_dual">MSC-PhD(Dual)</option>
+            <option value="msc2">MSC2</option>
+            <option value="msc5">MSC5</option>
+          </optgroup>
+          <option value="mba">MBA</option>
+          <option value="phd">PhD</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="department">Department:</label>
+        <select name="department" id="department">
+          <optgroup label="Engineering">
+            <option value="aerospace_engineering">Aerospace Engineering</option>
+            <option value="biological_sciences_bioengineering">
+              Biological Sciences & Bioengineering
+            </option>
+            <option value="chemical_engineering">Chemical Engineering</option>
+
+            <option value="civil_engineering">Civil Engineering</option>
+
+            <option value="computer_science_engineering">
+              Computer Science & Engineering
+            </option>
+
+            <option value="design">Design</option>
+
+            <option value="electrical_engineering">
+              Electrical Engineering
+            </option>
+
+            <option value="management_sciences">Management Sciences</option>
+            <option value="materials_science_engineering">
+              Materials Science & Engineering
+            </option>
+
+            <option value="mechanical_engineering">
+              Mechanical Engineering
+            </option>
+
+            <option value="sustainable_energy_engineering">
+              Sustainable Energy Engineering
+            </option>
+          </optgroup>
+          <optgroup label="Humanities">
+            <option value="humanities_social_sciences">
+              Humanities & Social Sciences
+            </option>
+            <option value="economics">Economics</option>
+          </optgroup>
+          <optgroup label="Sciences">
+            <option value="chemistry">Chemistry</option>
+            <option value="cognitive_science">Cognitive Science</option>
+            <option value="earth_sciences">Earth Sciences</option>
+            <option value="mathematics_statistics">
+              Mathematics & Statistics
+            </option>
+            <option value="physics">Physics</option>
+            <option value="space_planetary_astronomical_sciences_engineering">
+              Space, Planetary & Astronomical Sciences & Engineering
+            </option>
+          </optgroup>
+          <optgroup label="Management">
+            <option value="department_of_management_sciences">
+              Department of Management Sciences
+            </option>
+          </optgroup>
+          <optgroup label="Inter-disciplinary Programs">
+            <option value="materials_science_programme">
+              Materials Science Programme
+            </option>
+            <option value="nuclear_engineering_technology">
+              Nuclear Engineering & Technology
+            </option>
+            <option value="photonics_science_engineering_programme">
+              Photonics Science and Engineering Programme
+            </option>
+          </optgroup>
+          <optgroup label="Schools">
+            <option value="gangwal_school_of_medical_sciences_and_technology">
+              Gangwal School of Medical Sciences and Technology
+            </option>
+            <option value="kotak_school_of_sustainability">
+              Kotak School of Sustainability
+            </option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="Intrest">Intrest</label>
+        <select name="interest" id="interest">
+            <optgroup label="Academic Contributions">
+              <option value="visiting_faculty_dofa">Visiting Faculty (DoFA)</option>
+              <option value="professor_of_practice">Professor of Practice</option>
+              <option value="adjunct_professor_dofa">Adjunct Professor (DoFA)</option>
+            </optgroup>
+            <optgroup label="Entrepreneurship">
+              <option value="angel_investor_siic">Angel Investor (SIIC)</option>
+              <option value="mentorship_dora">Mentorship (DoRA)</option>
+            </optgroup>
+            <optgroup label="Students">
+              <option value="placement_spo">Placement (SPO)</option>
+              <option value="mentorship_students">Mentorship</option>
+              <option value="internship_spo">Internship (SPO)</option>
+            </optgroup>
+            
+            <option value="AlmaKonnect">AlmaKonnect</option>
+            <option value="IITKonverge">IITKonverge</option>
+            
+          </select>
+      </div>
+      
+    
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
